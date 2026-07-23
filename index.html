@@ -3,152 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Apartamento</title>
+  <title>Apartamento à Venda/title>
   
-  <!-- Fontes Google -->
+  <!-- Fonte e Ícones -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  
-  <!-- Ícones Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <!-- Arquivo de Estilos Externo -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Header / Hero -->
-  <header class="hero">
+  <header class="header">
     <div class="container">
-      <span class="badge-direct"><i class="fa-solid fa-handshake"></i> Venda Direta com Proprietário</span>
-      <h1>Apartamento</h1>
-      <p>Pronto para morar, diversos itens inclusos conforme descrição abaixo.</p>
+      <span class="tag">Venda Direta com Proprietário</span>
+      <h1>Apartamento à Venda</h1>
+      <div class="price">R$ 445.000</div>
+      <p class="price-subtitle">(Valor para negociação direta comigo. Valor promocional por tempo limitado enquanto tenho uma isenção em vigor)</p>
       
-      <div class="price-tag">R$ 445.000, sendo direto comigo. Valor promocional enquanto tenho uma isenção me beneficiando.</div>
-      
-      <div class="hero-buttons">
-        <a href="https://wa.me/5541999862142?text=Olá,%20Estíverson!%20Vi%20o%20anúncio%20do%20seu%20imóvel%20no%20site%20e%20gostaria%20de%20mais%20informações." class="btn btn-whatsapp" target="_blank">
-          <i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp
-        </a>
-        <a href="#detalhes" class="btn btn-secondary">
-          <i class="fa-solid fa-list-check"></i> Ver Detalhes
+      <div class="header-actions">
+        <a href="https://wa.me/5541999862142?text=Olá,%20Estíverson!%20Vi%20o%20anúncio%20do%20seu%20imóvel%20e%20gostaria%20de%20mais%20informações." class="btn btn-wsp" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i> Falar pelo WhatsApp
         </a>
       </div>
     </div>
   </header>
 
   <main class="container">
-    
-    <!-- Galeria de Imagens (6 Fotos) -->
-    <section class="gallery-section">
+
+    <!-- Galeria de Fotos -->
+    <section class="gallery">
+      <h2>Fotos do Imóvel</h2>
       <div class="gallery-grid">
-        <div class="photo-card">
-          <img src="img/503-1.jpeg" alt="Foto do Imóvel 1" loading="lazy">
-        </div>
-        <div class="photo-card">
-          <img src="img/503-2.jpeg" alt="Foto do Imóvel 2" loading="lazy">
-        </div>
-        <div class="photo-card">
-          <img src="img/503-3.jpeg" alt="Foto do Imóvel 3" loading="lazy">
-        </div>
-        <div class="photo-card">
-          <img src="img/503-4.jpeg" alt="Foto do Imóvel 4" loading="lazy">
-        </div>
-        <div class="photo-card">
-          <img src="img/503-5.jpeg" alt="Foto do Imóvel 5" loading="lazy">
-        </div>
-        <div class="photo-card">
-          <img src="img/503-6.jpeg" alt="Foto do Imóvel 6" loading="lazy">
-        </div>
+        <img src="img/503-1.jpeg" alt="Foto do imóvel 1" loading="lazy">
+        <img src="img/503-2.jpeg" alt="Foto do imóvel 2" loading="lazy">
+        <img src="img/503-3.jpeg" alt="Foto do imóvel 3" loading="lazy">
+        <img src="img/503-4.jpeg" alt="Foto do imóvel 4" loading="lazy">
+        <img src="img/503-5.jpeg" alt="Foto do imóvel 5" loading="lazy">
+        <img src="img/503-6.jpeg" alt="Foto do imóvel 6" loading="lazy">
       </div>
     </section>
 
-    <!-- Resumo dos Cômodos -->
-    <section class="quick-specs">
-      <div class="spec-item">
-        <div class="spec-icon"><i class="fa-solid fa-bed"></i></div>
-        <div class="spec-info">
-          <strong>3 Quartos</strong>
-          <span>Sendo 1 suíte</span>
-        </div>
-      </div>
-      <div class="spec-item">
-        <div class="spec-icon"><i class="fa-solid fa-bath"></i></div>
-        <div class="spec-info">
-          <strong>2 Banheiros</strong>
-          <span>Excelente posição solar</span>
-        </div>
-      </div>
-      <div class="spec-item">
-        <div class="spec-icon"><i class="fa-solid fa-couch"></i></div>
-        <div class="spec-info">
-          <strong>5º andar, ninguém pisando em cima !</strong>
-          <span>Armários e móveis fixos</span>
-        </div>
-      </div>
-      <div class="spec-item">
-        <div class="spec-icon"><i class="fa-solid fa-sun"></i></div>
-        <div class="spec-info">
-          <strong>Sacada de Vidro</strong>
-          <span>Diversos Móveis Planejados</span>
-        </div>
-      </div>
+    <!-- Descrição Simples em Lista -->
+    <section class="details">
+      <h2>O que o imóvel possui:</h2>
+      <ul class="property-list">
+        <li>Cozinha com todos os móveis planejados (incluindo o balcão instalado)</li>
+        <li>Cozinha sob medida, com forno elétrico, cooktop e depurador</li>
+        <li>Área de serviço com móveis sob medida, aquecedor de passagem e armários</li>
+        <li>Sala de jantar com mesa fixa</li>
+        <li>Sala de estar com painel fixo e sob medida</li>
+        <li>Sacada fechada em vidro</li>
+        <li>Corredor com armário até o teto</li>
+        <li>Banheiro social com armário fixo</li>
+        <li>Dormitório 1 - Com roupeiro fixo e sob medida</li>
+        <li>Dormitório 2 - Com roupeiro fixo sob medida</li>
+        <li>Dormitório suíte - Com roupeiro fixo sob medida</li>
+        <li>Banheiro da suíte com armário fixo</li>
+        <li>Todas as cortinas sob medida e iluminação em todos os ambientes</li>
+      </ul>
     </section>
 
-    <!-- Detalhes do Imóvel -->
-    <section id="detalhes" class="details-section">
-      <h2 class="section-title">O que o imóvel oferece</h2>
+    <!-- Contato -->
+    <section class="contact-box">
+      <h2>Entre em Contato</h2>
+      <p class="owner-name">Estíverson Oliveira</p>
       
-      <div class="features-grid">
-        
-        <!-- Cozinha e Serviços -->
-        <div class="feature-card">
-          <h3><i class="fa-solid fa-kitchen-set"></i></h3>
-          <ul class="feature-list">
-            <li>Cozinha sob medida com móveis planejados e balcão instalado</li>
-            <li>Equipada com forno elétrico, cooktop e depurador</li>
-            <li>Área de serviço independente com móveis sob medida</li>
-            <li>Aquecedor de passagem instalado e armários dedicados</li>
-          </ul>
-        </div>
-
-        <!-- Salas e Varanda -->
-        <div class="feature-card">
-          <h3><i class="fa-solid fa-tv"></i> Estar & Convivência</h3>
-          <ul class="feature-list">
-            <li>Sala de jantar com mesa fixa projetada</li>
-            <li>Sala de estar com painel fixo sob medida</li>
-            <li>Sacada fechada em vidro com excelente luminosidade</li>
-            <li>Corredor de circulação com armário até o teto</li>
-          </ul>
-        </div>
-
-        <!-- Quartos e Suíte -->
-        <div class="feature-card">
-          <h3><i class="fa-solid fa-door-closed"></i> Dormitórios & Banheiros</h3>
-          <ul class="feature-list">
-            <li>Dormitório Suíte com roupeiro fixo sob medida</li>
-            <li>Dormitórios 1 e 2 com roupeiros fixos sob medida</li>
-            <li>Banheiro social e Suíte com armários fixos</li>
-            <li>Cortinas sob medida e iluminação em todos os ambientes</li>
-          </ul>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Chamada para Ação / Contato -->
-    <section class="cta-card">
-      <h2>Negocie direto comigo (proprietário)</h2>
-      <p>Guio toda a documentação até o registro. Já vendi outros imóveis meus no condomínio.</p>
-      
-      <div class="contact-methods">
-        <a href="https://wa.me/5541999862142?text=Olá,%20Estíverson!%20Gostaria%20de%20agendar%20uma%20visita." class="contact-item" target="_blank">
-          <i class="fa-brands fa-whatsapp" style="color: #34d399;"></i> (41) 99986-2142
+      <div class="contact-links">
+        <a href="https://wa.me/5541999862142?text=Olá,%20Estíverson!%20Gostaria%20de%20agendar%20uma%20visita." target="_blank" class="contact-item">
+          <i class="fa-brands fa-whatsapp"></i> (41) 99986-2142
         </a>
         <a href="mailto:estiverson.o@gmail.com" class="contact-item">
-          <i class="fa-solid fa-envelope" style="color: #60a5fa;"></i> estiverson.o@gmail.com
+          <i class="fa-solid fa-envelope"></i> estiverson.o@gmail.com
         </a>
       </div>
     </section>
@@ -157,7 +84,7 @@
 
   <footer>
     <div class="container">
-      <p>Anúncio particular — Estíverson Oliveira</p>
+      <p>Anúncio particular • Estíverson Oliveira</p>
     </div>
   </footer>
 
